@@ -6,12 +6,12 @@ import pl.marcel.samplersorter.domain.ports.SampleRackRepository;
 import pl.marcel.samplersorter.domain.ports.SampleRepository;
 
 @Singleton
-public class SampleRackFacade {
+public class SampleRackCommandHandler {
 
     private final SampleRackRepository sampleRackRepository;
     private final SampleRepository sampleRepository;
 
-    public SampleRackFacade(SampleRackRepository sampleRackRepository, SampleRepository sampleRepository) {
+    public SampleRackCommandHandler(SampleRackRepository sampleRackRepository, SampleRepository sampleRepository) {
         this.sampleRackRepository = sampleRackRepository;
         this.sampleRepository = sampleRepository;
     }
