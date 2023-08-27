@@ -1,4 +1,4 @@
-package pl.marcel.samplersorter.adapters.in.request;
+package pl.marcel.samplersorter.adapters.in;
 
 import io.micronaut.core.annotation.Introspected;
 import io.micronaut.serde.annotation.Serdeable;
@@ -9,5 +9,5 @@ import javax.validation.constraints.NotNull;
 
 @Serdeable
 @Introspected
-public record UpdateSampleRackRequest(@NotNull Long rackId, @NotEmpty Long sampleId) implements UpdateSampleRackCommand {
+record UpdateSampleRackRequest(@NotNull Long rackId, @NotEmpty Long sampleId) implements UpdateSampleRackCommand {
 }
