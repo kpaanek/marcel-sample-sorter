@@ -35,11 +35,11 @@ class SampleRackControllerITSpec extends Specification {
         requestSpecification
                 .given()
                     .body('''
-                        {
-                            "rackId": "2",
-                            "sampleId": "2"
-                        }
-                    ''')
+                            {
+                                "rackId": "2",
+                                "sampleId": "1"
+                            }
+                        ''')
                     .contentType(ContentType.JSON)
                 .when()
                     .put('/sample-racks')
@@ -53,8 +53,8 @@ class SampleRackControllerITSpec extends Specification {
                 .given()
                     .body('''
                             {
-                                "rackId": "3",
-                                "sampleId": "1"
+                                "rackId": "2",
+                                "sampleId": "2"
                             }
                         ''')
                     .contentType(ContentType.JSON)
@@ -70,8 +70,8 @@ class SampleRackControllerITSpec extends Specification {
                 .given()
                     .body('''
                                 {
-                                    "rackId": "3",
-                                    "sampleId": "2"
+                                    "rackId": "2",
+                                    "sampleId": "3"
                                 }
                             ''')
                     .contentType(ContentType.JSON)
@@ -87,8 +87,8 @@ class SampleRackControllerITSpec extends Specification {
                 .given()
                     .body('''
                                     {
-                                        "rackId": "3",
-                                        "sampleId": "3"
+                                        "rackId": "2",
+                                        "sampleId": "4"
                                     }
                                 ''')
                     .contentType(ContentType.JSON)
@@ -104,8 +104,8 @@ class SampleRackControllerITSpec extends Specification {
                 .given()
                     .body('''
                                         {
-                                            "rackId": "3",
-                                            "sampleId": "3"
+                                            "rackId": "2",
+                                            "sampleId": "5"
                                         }
                                     ''')
                     .contentType(ContentType.JSON)

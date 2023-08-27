@@ -17,10 +17,7 @@ public class SampleRackMockRepository implements SampleRackRepository {
     private static final Map<Long, SampleRack> SAMPLE_RACK_MAP = new ConcurrentHashMap<>() {
         {
             put(1L, new SampleRack(1));
-            put(2L, new SampleRack(2, Set.of(new Sample(1, new PatientDetails(
-                    25, "COMPANY_X", "DISTRICT_X", "DEFECT_X"
-            )))));
-            put(3L, new SampleRack(2, Set.of(new Sample(1, new PatientDetails(
+            put(2L, new SampleRack(2, Set.of(new Sample(10, new PatientDetails(
                     30, "COMPANY_A", "DISTRICT_A", "DEFECT_A"
             )))));
         }
