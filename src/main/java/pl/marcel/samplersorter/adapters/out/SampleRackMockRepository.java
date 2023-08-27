@@ -12,7 +12,7 @@ import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
 @Singleton
-public class SampleRackMockRepository implements SampleRackRepository {
+class SampleRackMockRepository implements SampleRackRepository {
 
     private static final Map<Long, SampleRack> SAMPLE_RACK_MAP = new ConcurrentHashMap<>() {
         {

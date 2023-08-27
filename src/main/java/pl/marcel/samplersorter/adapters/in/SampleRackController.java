@@ -10,16 +10,16 @@ import pl.marcel.samplersorter.domain.SampleRackCommandHandler;
 import javax.validation.Valid;
 
 @Controller("/sample-racks")
-public class SampleRackController {
+class SampleRackController {
 
     private final SampleRackCommandHandler commandHandler;
 
-    public SampleRackController(SampleRackCommandHandler commandHandler) {
+    SampleRackController(SampleRackCommandHandler commandHandler) {
         this.commandHandler = commandHandler;
     }
 
     @Put
-    public HttpResponse<Void> updateSampleRack(@Body @Valid UpdateSampleRackRequest request) {
+    HttpResponse<Void> updateSampleRack(@Body @Valid UpdateSampleRackRequest request) {
         commandHandler.handle(request);
         return HttpResponse.noContent();
     }

@@ -10,7 +10,7 @@ import jakarta.inject.Singleton;
 
 @Produces
 @Singleton
-public class IllegalArgumentExceptionHandler implements ExceptionHandler<IllegalArgumentException, HttpResponse<JsonError>> {
+class IllegalArgumentExceptionHandler implements ExceptionHandler<IllegalArgumentException, HttpResponse<JsonError>> {
 
     @Override
     public HttpResponse<JsonError> handle(HttpRequest request, IllegalArgumentException exception) {

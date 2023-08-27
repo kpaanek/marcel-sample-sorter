@@ -10,7 +10,7 @@ import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 
 @Singleton
-public class SampleMockRepository implements SampleRepository {
+class SampleMockRepository implements SampleRepository {
 
     private static final Map<Long, Sample> SAMPLE_MAP = new ConcurrentHashMap<>() {
         {
