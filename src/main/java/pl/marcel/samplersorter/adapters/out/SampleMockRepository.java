@@ -29,7 +29,6 @@ class SampleMockRepository implements SampleRepository {
             put(5L, new Sample(5, new PatientDetails(
                     35, "COMPANY_B", "DISTRICT_B", "DEFECT_A"
             )));
-
         }
     };
 

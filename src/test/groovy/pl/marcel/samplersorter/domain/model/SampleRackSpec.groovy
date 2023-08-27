@@ -46,5 +46,4 @@ class SampleRackSpec extends Specification {
         35          | "COMPANY_A"   | "DISTRICT_B"  | "VISION_DEFECT_B"
         35          | "COMPANY_B"   | "DISTRICT_B"  | "VISION_DEFECT_A"
     }
-
 }
